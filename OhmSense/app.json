@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "OhmSense",
+    "slug": "OhmSense",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0A1020",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0A1020"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ohmsense.app"
+    },
+    "android": {
+      "package": "com.ohmsense.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#0A1020",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "plugins": [
+      [
+        "@sfourdrinier/react-native-ble-plx",
+        {
+          "neverForLocation": true,
+          "modes": ["central"]
+        }
+      ],
+      "expo-dev-client"
+    ],
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
